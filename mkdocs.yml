@@ -3,8 +3,7 @@ theme:
   name: material
   features:
     - content.code.copy
-    - content.code.select
-    - content.code.annotate
+    - content.code.annotate 
   icon:
     admonition:
       note: octicons/tag-16
@@ -21,6 +20,7 @@ theme:
       quote: octicons/quote-16
 
 
+  
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -29,6 +29,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - admonition
+    - admonition
   - pymdownx.details
-  - pymdownx.superfences

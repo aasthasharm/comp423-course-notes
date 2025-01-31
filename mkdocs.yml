@@ -4,6 +4,7 @@ theme:
   features:
     - content.code.copy
     - content.code.annotate 
+    - content.code.select
   icon:
     admonition:
       note: octicons/tag-16
@@ -29,5 +30,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-    - admonition
+  - admonition
   - pymdownx.details

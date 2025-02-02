@@ -1,4 +1,4 @@
-# Hello! Welcome to the Go COMP 423 tutorial. We will be setting up a dev container with Go!
+# Setting up a dev container for Go
 
 ## Prerequistes 
 Primary author: [Aditi](https://github.com/aditivn12)

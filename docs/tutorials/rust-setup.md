@@ -1,6 +1,7 @@
 # Setting up a dev container for Rust
 
 Primary author: [Aastha Sharma](https://github.com/aasthasharm)
+Reviewer: [Aditi Nayak](https://github.com/aditivn12)
 ## Prerequisites
 To be able to set up a dev container, we must first ensure we have the following installed:
 
@@ -125,7 +126,18 @@ While `cargo build` allows you to compile then execute afterwards, `cargo run` c
 
 The final step is to push all of your changes in this project to your git repository.
 
-start by staging all of your changes using `git add -A`. Next you can commit them using `git commit -m <commit-message-here>`. Lastly, you can push using `git push`.
+start by staging all of your changes using 
+```bash
+`git add -A`. 
+```
+Next you can commit them using 
+```bash
+`git commit -m <commit-message-here>`. 
+```
+Lastly, you can push using 
+```bash
+`git push`.
+```
 
 
 

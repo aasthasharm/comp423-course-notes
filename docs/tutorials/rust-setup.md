@@ -128,15 +128,15 @@ The final step is to push all of your changes in this project to your git reposi
 
 start by staging all of your changes using 
 ```bash
-`git add -A`. 
+git add -A
 ```
 Next you can commit them using 
 ```bash
-`git commit -m <commit-message-here>`. 
+git commit -m <commit-message-here>
 ```
 Lastly, you can push using 
 ```bash
-`git push`.
+git push
 ```
 
 

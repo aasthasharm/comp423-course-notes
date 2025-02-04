@@ -1,4 +1,4 @@
-# Setting up a dev container for Rust
+# Hello! Welcome to the Rust COMP 423 tutorial. We will be setting up a dev container with Rust!
 
 Primary author: [Aastha Sharma](https://github.com/aasthasharm)
 Reviewer: [Aditi Nayak](https://github.com/aditivn12)
@@ -24,11 +24,14 @@ To be able to set up a dev container, we must first ensure we have the following
 ## Initializing Git
 
 #### Creating local Git Repository
+## Initializing Directory and Git Repository
+
+#### Creating local Git Repository
 First, we must create a directory and git repository to house our new project. You can either open Visual Studio Code and create a directory there, or open the terminal and execute the following commands:
 
 ``` batch
-mkdir rust-dev-container 
-cd rust-dev-container 
+mkdir rust-dev-container-tutorial 
+cd rust-dev-container-tutorial 
 git init 
 ```
 
@@ -79,7 +82,7 @@ In Rust specifically, however, we do not use a  `#! requirements.txt` file since
     For a more detailed overview of dev containers, please visit [this website](https://comp423-25s.github.io/resources/MkDocs/tutorial/#part-2-setting-up-the-development-environment).
 
 #### Setting up devcontainer.json
-1. Open your `#! rust-dev-container` directory in VS Code
+1. Open your `#! rust-dev-container-tutorial` directory in VS Code
 2. Inside the project, create a `.devcontainer` directory containing a file called `.devcontainer/devcontainer.json`
 3. Copy paste the following specifications into your devcontainer.json file:
 
@@ -92,7 +95,7 @@ In Rust specifically, however, we do not use a  `#! requirements.txt` file since
         "settings":{},
         "extensions": ["rust-lang.rust-analyzer"]
     }
-  }
+  },
   "postCreateCommand": "rustc --version"
 
 }

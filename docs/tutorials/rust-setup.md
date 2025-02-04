@@ -1,6 +1,7 @@
 # Setting up a dev container for Rust
 
 Primary author: [Aastha Sharma](https://github.com/aasthasharm)
+Reviewer: [Aditi Nayak](https://github.com/aditivn12)
 ## Prerequisites
 To be able to set up a dev container, we must first ensure we have the following installed:
 

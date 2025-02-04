@@ -21,9 +21,7 @@ To be able to set up a dev container, we must first ensure we have the following
     
     [Dev Containers Extension Installation](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-## Initializing Git
 
-#### Creating local Git Repository
 ## Initializing Directory and Git Repository
 
 #### Creating local Git Repository

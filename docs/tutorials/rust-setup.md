@@ -1,4 +1,4 @@
-# Setting up a dev container for Rust
+# Hello! Welcome to the Rust COMP 423 tutorial. We will be setting up a dev container with Rust!
 
 Primary author: [Aastha Sharma](https://github.com/aasthasharm)
 Reviewer: [Aditi Nayak](https://github.com/aditivn12)
@@ -22,12 +22,50 @@ To be able to set up a dev container, we must first ensure we have the following
     [Dev Containers Extension Installation](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ## Initializing Git
+
+#### Creating local Git Repository
+## Initializing Directory and Git Repository
+
+#### Creating local Git Repository
 First, we must create a directory and git repository to house our new project. You can either open Visual Studio Code and create a directory there, or open the terminal and execute the following commands:
 
 ``` batch
-mkdir rust-dev-container 
-cd rust-dev-container 
+mkdir rust-dev-container-tutorial 
+cd rust-dev-container-tutorial 
 git init 
+```
+
+#### Creating remote Git Repository
+The next step is to create a remote repository to push our changes to. This is beneficial when working in teams as it allows everyone's changes to be pushed and pulled remotely, leading to easier collaboration.
+
+1. Ensure you have an account on the github website.
+
+2. Navigate to the left sidebar of the homepage where you can click "new" to create a new repository and fill it in with the following information:
+
+    * Name: comp423-Rust-Tutorial
+
+    * Description: "Setting up a Dev container and running a simple program in Rust."
+
+    * Visibility: public
+
+3. Do not initialize README, .gitignore, or license
+
+4. Create Repository
+
+Next, we need to link our local repository we created using `git init` to the remote repository we just created.
+
+In the terminal, we can add the GitHub repository as a remote:
+
+```
+git remote add origin https://github.com/<your-username>/comp423-rust-tutorial.git
+```
+
+Next, we must check that our default branch name is `main`. If it is not, we can run the command `git branch -M main`. 
+
+Once we are finished following the rest of the tutorial, we can push to our remote repository using the following command:
+
+```
+git push --set-upstream origin main
 ```
 
 ## Configure your Dev Container
@@ -44,7 +82,7 @@ In Rust specifically, however, we do not use a  `#! requirements.txt` file since
     For a more detailed overview of dev containers, please visit [this website](https://comp423-25s.github.io/resources/MkDocs/tutorial/#part-2-setting-up-the-development-environment).
 
 #### Setting up devcontainer.json
-1. Open your `#! rust-dev-container` directory in VS Code
+1. Open your `#! rust-dev-container-tutorial` directory in VS Code
 2. Inside the project, create a `.devcontainer` directory containing a file called `.devcontainer/devcontainer.json`
 3. Copy paste the following specifications into your devcontainer.json file:
 
@@ -57,7 +95,7 @@ In Rust specifically, however, we do not use a  `#! requirements.txt` file since
         "settings":{},
         "extensions": ["rust-lang.rust-analyzer"]
     }
-  }
+  },
   "postCreateCommand": "rustc --version"
 
 }
@@ -126,18 +164,7 @@ While `cargo build` allows you to compile then execute afterwards, `cargo run` c
 
 The final step is to push all of your changes in this project to your git repository.
 
-start by staging all of your changes using 
-```bash
-git add -A
-```
-Next you can commit them using 
-```bash
-git commit -m <commit-message-here>
-```
-Lastly, you can push using 
-```bash
-git push
-```
+start by staging all of your changes using `git add -A`. Next you can commit them using `git commit -m <commit-message-here>`. Lastly, you can push using `git push --set-upstream origin main`.
 
 
 
